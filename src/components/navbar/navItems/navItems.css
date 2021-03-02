@@ -1,0 +1,40 @@
+
+#navbarNav ul {
+    display: flex ;
+    flex-direction: column;
+
+ }
+ div#navbarNav {
+     display: block;
+ }
+ .nav-item {
+     display: flex;
+     align-items: center;
+ }
+
+ i{
+    font-size: 24px;
+ }
+
+.active-icon {
+    color: blue !important;
+
+}
+.github-item {
+    display: flex;
+    
+}
+.gith-and-githAndTele {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+ /* For the responsive temp cuse it most be row */
+@media screen and(max-width:1000px) {
+    #navbarNav ul {
+        display: flex ;
+        flex-direction: column;
+    }
+    
+}

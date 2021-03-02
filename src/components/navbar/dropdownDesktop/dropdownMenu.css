@@ -1,0 +1,79 @@
+.language:hover {
+    cursor: pointer;
+}
+.dropdown {
+    margin: 90px;
+}
+button#dropdownMenuButton{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    border: 1px solid black;
+    color:black;
+    box-shadow: none;
+    width:233px;
+     
+}
+ 
+.dropdown-toggle::after {
+    margin-top: 10px;
+ 
+}
+li.list-group-item {
+      border-radius: 15px !important;
+}
+.list-group-item {
+      width: 232px;
+      height: 40px;
+}
+li.list-group-item{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.group-lang {
+    animation: languageGo 0.2s;
+    position: absolute !important;
+
+}
+.group-lang svg {
+    padding-right: 32px;
+ 
+}
+.flag{
+    position: relative;
+    bottom: 4px;    
+}
+
+.arrow-language {
+    animation: animArrowLang 0.2s;
+    transform: rotate(-90deg);
+}
+
+
+@keyframes animArrowLang {
+    from{
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
+
+@keyframes languageGo {
+    from{
+        transform: translateY(-40px);
+        opacity: 0;
+    } 
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:990px){
+    #dropdown-menu-desktop{
+        display: none !important;
+    }
+}

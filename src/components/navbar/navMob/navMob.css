@@ -1,0 +1,53 @@
+
+button.navbar-toggler{
+    display: block !important;
+}
+
+.navMob {
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    height: 100vh;
+    padding: 20px 0 0 2%;
+    left: 0;
+    top:65px;
+    background-color: white;
+ } 
+ 
+
+ .hidden-responsive {
+    display: none;
+}
+.animation-show {
+    animation: showNav 0.5s;
+}
+.hideNav {
+    animation: hideNav 0.5s ;
+}
+
+@media screen and (max-width: 780px){
+    .navMob-Parent {
+        display: none !important;
+    }
+}
+
+@keyframes showNav{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+     }
+}
+@keyframes hideNav {
+    from{
+
+    }
+    to{
+        transform: translateX(-300px);
+    }
+}
+@media screen and (max-width:400px){
+    .navMob {
+        display: none;
+    }
+}

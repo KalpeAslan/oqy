@@ -1,0 +1,26 @@
+
+/* for navbar */
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:white !important;
+    width: 100%;
+    border-bottom: 1px solid rgb(197, 195, 195);
+    z-index: 3;
+    height: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 

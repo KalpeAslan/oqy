@@ -1,0 +1,28 @@
+.input-score-text {
+    width: 30vw !important;
+}
+
+.range-mobile {
+    width: 80vw !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.input-score {
+    animation: show-input-score 1s;
+}
+.hide-input-score {
+    display: none;
+}
+
+
+@keyframes show-input-score {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

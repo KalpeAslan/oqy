@@ -1,0 +1,29 @@
+.container-study-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:white;
+}
+
+.container-study-page img{
+    width: 37vw;
+}
+.container-study-page h1 {
+    margin: 0 300px;
+}
+@media screen and (max-width: 1300px) {
+    .container-study-page h1 {
+        margin: 0 0;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container-study-page img{
+        width: 90vw;
+    }
+    .container-study-page h1 {
+        margin: 0 30px;
+        margin-bottom: 100px;
+    }
+}

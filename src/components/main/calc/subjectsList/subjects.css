@@ -1,0 +1,171 @@
+
+
+.subjects-list-buttons {
+    position: relative;
+}
+
+
+.back-button-subject-index {
+    display: flex;
+    height: 13vh;
+    align-items: center;
+    border-top: 1px solid black;
+    
+}
+.back-button-subject-index h5 {
+    position: relative;
+    margin-left: 120px;
+}
+ul.list-group.subjects-list{
+    height: 65vh;
+}
+.subjects-list-hide {
+    display: none !important;
+}
+
+
+.back-button-subject-index svg {
+    cursor: pointer;
+    position: absolute;
+}
+
+
+.list-group {
+    display: inline-block !important;
+}
+.subject-list-item {
+    width: 40vw !important;
+}
+.subject-slider {
+    width:40vw;
+    overflow: hidden;
+    overflow-y: scroll;
+    display:flex;
+    flex-direction: column !important;
+}
+.subjects-first-second {
+    display: flex;
+}
+/* #button-back {
+    height: 60px;
+    width:120px;
+} */
+.subjects-list li {
+    width: 40vw;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.subject-icon {
+    width:30px;
+    height: 30px;
+}
+.subject-desc {
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+/* animation */
+
+.ul-switch-next {
+    animation: ul-switch-next 1s;
+}
+
+.ul-switch-back {
+    animation: ul-switch-back 1s;
+}
+.hide-first {
+    transform: translateX(-40vw);
+}
+.hide-second {
+    transform: translateX(0);
+}
+
+
+@keyframes ul-switch-next{
+    from{}
+    to{
+       transform: translateX(-40vw);
+    }
+}
+
+@keyframes ul-switch-back {
+    from{}
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+@media screen and (max-width: 1042px){
+    .back-button-subject-index h5 {
+        font-size: 15px;
+        margin-left: 80px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px){
+
+    .subject-slider {
+        position: relative;
+        width:90vw;
+        /* height: 100vh; */
+    }
+    .back-button-subject-index{
+        position: relative;
+
+    }
+    .subjects-list li {
+        width:90vw !important;
+    }
+
+
+    .hide-first {
+        transform: translateX(-90vw);
+    }
+  
+    
+    @keyframes ul-switch-next{
+        from{}
+        to{
+           transform: translateX(-90vw);
+        }
+    }
+
+    @keyframes show {
+        from {
+            top: 500px;
+        }
+        to {
+            top: 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 468px) {
+    .back-button-subject-index h5 {
+        font-size: 15px;
+        margin-left: 80px;
+    }
+    
+    .subjects-list-buttons h5 {
+        font-size: 4vw;
+    }
+    .subjects-list-buttons {
+        
+        position: relative;
+        top:20vh;
+
+    }
+
+    .subjects-list li {
+        height: 60px;
+    }
+    
+}
+

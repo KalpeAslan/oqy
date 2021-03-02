@@ -1,0 +1,71 @@
+.about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white !important;
+}
+.about-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-card-item {
+    list-style-type: none;
+    padding: 0 50px 30px 50px;
+}
+.card-hover-active{
+    animation: shadow-card-active 0.5s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+.card-body a{
+    display: flex;
+    justify-content: center;
+}
+.card-body-title p{
+    display: flex;
+    justify-content: center;
+}
+
+.card-body:hover {
+    cursor: pointer;
+}
+
+
+.about-card-title {
+    display: flex;
+    height: 60px;
+
+    justify-content: center;
+    align-items: center;
+}
+.about-card-title h5{
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.about-title-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-title-body img {
+   width: 450px;
+   height: 450px;
+}
+
+a { 
+    color: black !important;
+    text-decoration: none !important; /* Отменяем подчеркивание у ссылки */
+}
+.about-button-font {
+    color: white !important;
+}
+
+@keyframes  shadow-card-active{
+    from{
+        box-shadow: 0 0 0 rgba(0,0,0,0); /* Параметры тени */
+    }
+    to{
+        box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    }
+}

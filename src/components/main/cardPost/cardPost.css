@@ -1,0 +1,23 @@
+
+
+.blog-post-card-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog-card img{
+    width: 800px;
+    height: 800px;
+}
+
+.blog-post-card-open {
+    width: 40vw !important;
+}
+
+.blog-card-body {
+    display: flex;
+    flex-direction: column;
+}
+.blog-card-body img {
+    width: 40vw;
+}

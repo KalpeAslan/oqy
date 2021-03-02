@@ -1,0 +1,23 @@
+.main-calc {
+    height: calc((60px * 4) * 2 + 100px);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin: 0 300px;
+}
+
+@media screen and (max-width: 468px) {
+    #root{
+        overflow-x: hidden;
+    }
+    .main-calc {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-height: 506px) {
+    .main-calc {
+        margin: 0 10px;
+    }
+}

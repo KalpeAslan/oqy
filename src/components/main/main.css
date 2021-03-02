@@ -1,0 +1,40 @@
+.main-elems {
+    position: relative;
+    top: 65px;
+    background-color: rgb(249 249 249);
+}
+.main-calc {
+    height: 100vh;
+}
+.main-elems-opactity-active div {
+    animation: mainElemsOpacityAnim 0.5s;
+    background: #fdfafa;
+    opacity: 0.7;
+}
+
+.main-elems-opactity-inActive {
+    animation: mainElemsOpacityInAcitveAnim 0.5s;
+    opacity: 1;
+}
+
+@keyframes mainElemsOpacityAnim {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        background: #fdfafa;
+        opacity: 0.7;
+    }
+}
+
+@keyframes mainElemsOpacityInAcitveAnim {
+    from {
+        background: #fdfafa;
+        opacity: 0.7;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

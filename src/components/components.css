@@ -1,0 +1,26 @@
+.alert-warning{
+    z-index: 12;
+    width: 100%;
+    top: 10vh;
+}
+
+.show-alert{
+    animation: showAlert 0.4s;
+}
+
+.alert.alert-warning.show-alert{
+    position: absolute !important;
+}
+
+
+
+@keyframes showAlert{
+    from{
+        top: 0
+    }
+    to{
+        top: 10vh
+    }
+}
+
+
